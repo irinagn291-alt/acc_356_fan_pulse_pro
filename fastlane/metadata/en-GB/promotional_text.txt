@@ -1,0 +1,1 @@
+Predict fictional fixtures, complete a simulated training round and follow your points. Connect to a configured server to play in friends’ leagues.

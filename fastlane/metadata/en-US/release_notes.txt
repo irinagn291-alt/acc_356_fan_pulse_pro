@@ -1,0 +1,1 @@
+Practice predictions in a local training season, follow simulated results, and connect to friends’ leagues through a configured server.

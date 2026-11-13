@@ -1,0 +1,828 @@
+// !$*UTF8*$!
+{
+	classes = {
+	};
+	objectVersion = 77;
+	archiveVersion = 1;
+	objects = {
+		464BDE2FE08490BA3FE318FC /* PBXSourcesBuildPhase */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B5AFEB63CCD5E07C0405A97 /* PBXBuildFile */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F76C7E00F82EA7E26BD8ABE2 /* PBXBuildFile */ = {
+			isa = PBXBuildFile;
+			fileRef = 4D9341E5ABDE6314B58D9401 /* WidgetShared/WidgetIdentity.swift */;
+		};
+		6C5430465F5EB4134BD59C65 /* FanPulseUITests */ = {
+			productType = "com.apple.product-type.bundle.ui-testing";
+			productReference = 7F32371867C0BA8807E51669 /* FanPulseUITests.xctest */;
+			buildConfigurationList = BDEA685785C2D6587B311176 /* XCConfigurationList */;
+			packageProductDependencies = (
+			);
+			productName = FanPulseUITests;
+			isa = PBXNativeTarget;
+			buildPhases = (
+				C57FC5E4DBA3513E89C27B37 /* PBXSourcesBuildPhase */,
+			);
+			dependencies = (
+				3B9991D33F9396E95235947B /* PBXTargetDependency */,
+			);
+			name = FanPulseUITests;
+			buildRules = (
+			);
+		};
+		7F32371867C0BA8807E51669 /* FanPulseUITests.xctest */ = {
+			path = FanPulseUITests.xctest;
+			isa = PBXFileReference;
+			includeInIndex = 0;
+			lastKnownFileType = wrapper.cfbundle;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BC66E2E7FF6BA670407349D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.fanpulse.local.uitests;
+				SDKROOT = iphoneos;
+				TEST_TARGET_NAME = FanPulse;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		246DA967CBBA505BA75A9EB9 /* FanPulseWidgetTests.xctest */ = {
+			path = FanPulseWidgetTests.xctest;
+			isa = PBXFileReference;
+			explicitFileType = wrapper.cfbundle;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1BE70BB4DF939AD3BB44D83F /* WidgetShared/WidgetSnapshot.swift */ = {
+			path = WidgetShared/WidgetSnapshot.swift;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			sourceTree = SOURCE_ROOT;
+		};
+		3D2EDA97EEB8F774189CEC74 /* PBXBuildFile */ = {
+			isa = PBXBuildFile;
+			fileRef = 631CCECDEFC73BD5D83BB877 /* ServerRound.swift */;
+		};
+		3B9991D33F9396E95235947B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A09BA9EE28CCC9FCEB6157D4 /* FanPulse */;
+			targetProxy = 9F21E81B84693D6018FA832D /* PBXContainerItemProxy */;
+		};
+		65D3F018D7B8177ECF6BF0A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				COPY_PHASE_STRIP = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_COMMA = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 6.0;
+				CLANG_WARN_INT_CONVERSION = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				SDKROOT = iphoneos;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				CLANG_ENABLE_MODULES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ENABLE_TESTABILITY = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				GCC_DYNAMIC_NO_PIC = NO;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+			};
+			name = Debug;
+		};
+		ADB72B7DD6243A8644A9F47E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			name = Debug;
+			buildSettings = {
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FanPulse.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FanPulse";
+				GENERATE_INFOPLIST_FILE = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				CODE_SIGN_STYLE = Automatic;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.fanpulse.local.widgettests;
+			};
+		};
+		4D9341E5ABDE6314B58D9401 /* WidgetShared/WidgetIdentity.swift */ = {
+			path = WidgetShared/WidgetIdentity.swift;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			sourceTree = SOURCE_ROOT;
+		};
+		D652652349D2ADAC1F94743B /* PBXBuildFile */ = {
+			isa = PBXBuildFile;
+			fileRef = 1BE70BB4DF939AD3BB44D83F /* WidgetShared/WidgetSnapshot.swift */;
+		};
+		479ABFC5944B14EAD9DF18D3 /* FanPulse.app */ = {
+			path = FanPulse.app;
+			isa = PBXFileReference;
+			includeInIndex = 0;
+			lastKnownFileType = wrapper.application;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0DA92470284F1420AD8B1948 /* PBXResourcesBuildPhase */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2601A95D59DC3179BCC32651 /* PBXBuildFile */,
+				86402C950F2212E806EB31F7 /* PBXBuildFile */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E07A84907E441BC6780C1E75 /* PrivacyInfo.xcprivacy */ = {
+			isa = PBXFileReference;
+			path = PrivacyInfo.xcprivacy;
+			sourceTree = "<group>";
+		};
+		9004E49A54771DFCB0CE9405 /* FanPulse/WidgetBridge.swift */ = {
+			path = FanPulse/WidgetBridge.swift;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			sourceTree = SOURCE_ROOT;
+		};
+		4D69AC0A72C4C20795F98C81 /* WidgetShared/ProgressWidgetView.swift */ = {
+			path = WidgetShared/ProgressWidgetView.swift;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			sourceTree = SOURCE_ROOT;
+		};
+		E77A9B21F8345655E5951797 /* PBXBuildFile */ = {
+			isa = PBXBuildFile;
+			fileRef = F15F9723DC3AC9394C702843 /* WidgetExtension/ProgressWidget.swift */;
+		};
+		C4D492E19FCB0BD215768906 /* WidgetTests/WidgetIntegrationTests.swift */ = {
+			path = WidgetTests/WidgetIntegrationTests.swift;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			sourceTree = SOURCE_ROOT;
+		};
+		296CAA534F5B346B0A3995E0 /* PBXResourcesBuildPhase */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E00AEB8023BB41E8A61EF05A /* XCConfigurationList */ = {
+			isa = XCConfigurationList;
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+			buildConfigurations = (
+				ADB72B7DD6243A8644A9F47E /* Debug */,
+				EB008BCFCAF919F3364E1C83 /* Release */,
+			);
+		};
+		2DA90B85CD8AC91AC6955F99 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 51AE8258D04AD44381377CEF /* FanPulseWidget */;
+			targetProxy = A3965712A881A710D9BA02E2 /* PBXContainerItemProxy */;
+		};
+		51AE8258D04AD44381377CEF /* FanPulseWidget */ = {
+			productType = "com.apple.product-type.app-extension";
+			productReference = E8775EAA98C5ECD3EFA7F267 /* FanPulseWidget.appex */;
+			buildConfigurationList = 15F7D91701FDB6DF3D14E24B /* XCConfigurationList */;
+			productName = FanPulseWidget;
+			isa = PBXNativeTarget;
+			buildPhases = (
+				D413A172E88581934ECBF6A8 /* PBXSourcesBuildPhase */,
+				FEB096F652EF5D483BB8D138 /* PBXFrameworksBuildPhase */,
+				296CAA534F5B346B0A3995E0 /* PBXResourcesBuildPhase */,
+			);
+			dependencies = (
+			);
+			name = FanPulseWidget;
+			buildRules = (
+			);
+		};
+		0831B6D751CF9F8801484B26 /* PBXSourcesBuildPhase */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0860991A47DB1D4930E7617E /* PBXBuildFile */,
+				254AB17799765BEA4D2C49B2 /* PBXBuildFile */,
+				3D2EDA97EEB8F774189CEC74 /* PBXBuildFile */,
+				8ECC91A4DB47C239515D1F42 /* PBXBuildFile */,
+				2ED6FC9FFBE53C2C5C8DB57B /* PBXBuildFile */,
+				16ECA3DB2C9995A84F99664B /* PBXBuildFile */,
+				D652652349D2ADAC1F94743B /* PBXBuildFile */,
+				4F86ECE1AF8AB0B1D07D4F25 /* PBXBuildFile */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		631CCECDEFC73BD5D83BB877 /* ServerRound.swift */ = {
+			path = ServerRound.swift;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			sourceTree = "<group>";
+		};
+		445D81950292E2E689FB5662 /* PBXBuildFile */ = {
+			isa = PBXBuildFile;
+			fileRef = 4D69AC0A72C4C20795F98C81 /* WidgetShared/ProgressWidgetView.swift */;
+		};
+		4B5AFEB63CCD5E07C0405A97 /* PBXBuildFile */ = {
+			isa = PBXBuildFile;
+			fileRef = DD00981297435FC22FE3A739 /* WidgetTests/WidgetTests.swift */;
+		};
+		A09BA9EE28CCC9FCEB6157D4 /* FanPulse */ = {
+			productType = "com.apple.product-type.application";
+			productReference = 479ABFC5944B14EAD9DF18D3 /* FanPulse.app */;
+			buildConfigurationList = 384D27F54DC3DB3B3F914BC2 /* XCConfigurationList */;
+			packageProductDependencies = (
+			);
+			productName = FanPulse;
+			isa = PBXNativeTarget;
+			buildPhases = (
+				0831B6D751CF9F8801484B26 /* PBXSourcesBuildPhase */,
+				0DA92470284F1420AD8B1948 /* PBXResourcesBuildPhase */,
+				1A463C197D9C211831CD5D47 /* Embed App Extensions */,
+			);
+			dependencies = (
+				2DA90B85CD8AC91AC6955F99 /* PBXTargetDependency */,
+			);
+			name = FanPulse;
+			buildRules = (
+			);
+		};
+		7D6A8EEED7EAA51499217211 /* PBXBuildFile */ = {
+			isa = PBXBuildFile;
+			fileRef = CDCB7AD9B0278BAC9DD46684 /* FlowTests.swift */;
+		};
+		F15F9723DC3AC9394C702843 /* WidgetExtension/ProgressWidget.swift */ = {
+			path = WidgetExtension/ProgressWidget.swift;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			sourceTree = SOURCE_ROOT;
+		};
+		EB008BCFCAF919F3364E1C83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			name = Release;
+			buildSettings = {
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FanPulse.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FanPulse";
+				PRODUCT_BUNDLE_IDENTIFIER = app.fanpulse.local.widgettests;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 6.0;
+				CODE_SIGN_STYLE = Automatic;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				BUNDLE_LOADER = "$(TEST_HOST)";
+			};
+		};
+		16ECA3DB2C9995A84F99664B /* PBXBuildFile */ = {
+			isa = PBXBuildFile;
+			fileRef = 4D9341E5ABDE6314B58D9401 /* WidgetShared/WidgetIdentity.swift */;
+		};
+		A3965712A881A710D9BA02E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CBB66278E174D133B3ECA7C3 /* PBXProject */;
+			remoteGlobalIDString = 51AE8258D04AD44381377CEF /* FanPulseWidget */;
+			remoteInfo = FanPulseWidget;
+			proxyType = 1;
+		};
+		3B02951882B05AAEB6A8097B /* Widgets */ = {
+			isa = PBXGroup;
+			name = Widgets;
+			children = (
+				4D69AC0A72C4C20795F98C81 /* WidgetShared/ProgressWidgetView.swift */,
+				4D9341E5ABDE6314B58D9401 /* WidgetShared/WidgetIdentity.swift */,
+				1BE70BB4DF939AD3BB44D83F /* WidgetShared/WidgetSnapshot.swift */,
+				9004E49A54771DFCB0CE9405 /* FanPulse/WidgetBridge.swift */,
+				F15F9723DC3AC9394C702843 /* WidgetExtension/ProgressWidget.swift */,
+			);
+			sourceTree = "<group>";
+		};
+		BDEA685785C2D6587B311176 /* XCConfigurationList */ = {
+			isa = XCConfigurationList;
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+			buildConfigurations = (
+				8CD4F3E37835128B1DBB72E1 /* Debug */,
+				BC66E2E7FF6BA670407349D2 /* Release */,
+			);
+		};
+		384D27F54DC3DB3B3F914BC2 /* XCConfigurationList */ = {
+			isa = XCConfigurationList;
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+			buildConfigurations = (
+				DA2164A1B632495CFF229A06 /* Debug */,
+				BBA70C00A86F5BC665EC0CBC /* Release */,
+			);
+		};
+		8BE358B138D459C8171B1083 /* FanPulseWidgetTests */ = {
+			productType = "com.apple.product-type.bundle.unit-test";
+			productReference = 246DA967CBBA505BA75A9EB9 /* FanPulseWidgetTests.xctest */;
+			buildConfigurationList = E00AEB8023BB41E8A61EF05A /* XCConfigurationList */;
+			productName = FanPulseWidgetTests;
+			isa = PBXNativeTarget;
+			buildPhases = (
+				464BDE2FE08490BA3FE318FC /* PBXSourcesBuildPhase */,
+			);
+			dependencies = (
+				C178AE542E599700E04225E9 /* PBXTargetDependency */,
+			);
+			name = FanPulseWidgetTests;
+			buildRules = (
+			);
+		};
+		8A9EF4274A28D901935446C0 /* UITests */ = {
+			path = UITests;
+			isa = PBXGroup;
+			children = (
+				CDCB7AD9B0278BAC9DD46684 /* FlowTests.swift */,
+			);
+			sourceTree = "<group>";
+		};
+		DA2164A1B632495CFF229A06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
+				MARKETING_VERSION = 1.0;
+				INFOPLIST_FILE = Support/AppInfo.plist;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				ENABLE_TESTABILITY = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Fan Pulse";
+				INFOPLIST_KEY_CFBundleDevelopmentRegion = en_GB;
+				CODE_SIGN_ENTITLEMENTS = Support/App.entitlements;
+				SDKROOT = iphoneos;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = app.fanpulse.local;
+				CURRENT_PROJECT_VERSION = 1;
+				CODE_SIGN_STYLE = Automatic;
+			};
+			name = Debug;
+		};
+		254AB17799765BEA4D2C49B2 /* PBXBuildFile */ = {
+			isa = PBXBuildFile;
+			fileRef = 6FE3BBAF94A1623D9F03A852 /* Domain.swift */;
+		};
+		2ED6FC9FFBE53C2C5C8DB57B /* PBXBuildFile */ = {
+			isa = PBXBuildFile;
+			fileRef = 4D69AC0A72C4C20795F98C81 /* WidgetShared/ProgressWidgetView.swift */;
+		};
+		8CD4F3E37835128B1DBB72E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.fanpulse.local.uitests;
+				SDKROOT = iphoneos;
+				TEST_TARGET_NAME = FanPulse;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C57FC5E4DBA3513E89C27B37 /* PBXSourcesBuildPhase */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D6A8EEED7EAA51499217211 /* PBXBuildFile */,
+				AB7A7BE5287AE9C2C5E3B218 /* PBXBuildFile */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C7FF4A6AFB1FC0222264CDC /* Assets.xcassets */ = {
+			path = Assets.xcassets;
+			isa = PBXFileReference;
+			lastKnownFileType = folder.assetcatalog;
+			sourceTree = "<group>";
+		};
+		8F7F5433147727F625DE2E1D /* PBXGroup */ = {
+			isa = PBXGroup;
+			sourceTree = "<group>";
+			children = (
+				F93DBC70CABB9BC68F614B3F /* FanPulse */,
+				8A9EF4274A28D901935446C0 /* UITests */,
+				FC092192D1023783D8633430 /* Products */,
+				3B02951882B05AAEB6A8097B /* Widgets */,
+				C4D492E19FCB0BD215768906 /* WidgetTests/WidgetIntegrationTests.swift */,
+				DD00981297435FC22FE3A739 /* WidgetTests/WidgetTests.swift */,
+			);
+		};
+		86402C950F2212E806EB31F7 /* PBXBuildFile */ = {
+			isa = PBXBuildFile;
+			fileRef = E07A84907E441BC6780C1E75 /* PrivacyInfo.xcprivacy */;
+		};
+		FEB096F652EF5D483BB8D138 /* PBXFrameworksBuildPhase */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD001D4EAB38C0C76E005508 /* Release */ = {
+			isa = XCBuildConfiguration;
+			name = Release;
+			buildSettings = {
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_STYLE = Automatic;
+				MARKETING_VERSION = 1.0;
+				INFOPLIST_FILE = WidgetExtension/Info.plist;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				GENERATE_INFOPLIST_FILE = NO;
+				CODE_SIGN_ENTITLEMENTS = Support/Widget.entitlements;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 6.0;
+				CURRENT_PROJECT_VERSION = 1;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.fanpulse.local.widget;
+			};
+		};
+		B149D4AF318888C880045500 /* Store.swift */ = {
+			path = Store.swift;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			sourceTree = "<group>";
+		};
+		D1499D7FDB786038A8FE6AE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				SDKROOT = iphoneos;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 6.0;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				CLANG_WARN_EMPTY_BODY = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				CLANG_WARN_COMMA = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				COPY_PHASE_STRIP = NO;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				MTL_FAST_MATH = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+			};
+			name = Release;
+		};
+		CDCB7AD9B0278BAC9DD46684 /* FlowTests.swift */ = {
+			path = FlowTests.swift;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			sourceTree = "<group>";
+		};
+		DD00981297435FC22FE3A739 /* WidgetTests/WidgetTests.swift */ = {
+			path = WidgetTests/WidgetTests.swift;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			sourceTree = SOURCE_ROOT;
+		};
+		D413A172E88581934ECBF6A8 /* PBXSourcesBuildPhase */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				445D81950292E2E689FB5662 /* PBXBuildFile */,
+				F76C7E00F82EA7E26BD8ABE2 /* PBXBuildFile */,
+				00058B4E7A402598BA7262B2 /* PBXBuildFile */,
+				E77A9B21F8345655E5951797 /* PBXBuildFile */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB7A7BE5287AE9C2C5E3B218 /* PBXBuildFile */ = {
+			isa = PBXBuildFile;
+			fileRef = C4D492E19FCB0BD215768906 /* WidgetTests/WidgetIntegrationTests.swift */;
+		};
+		2601A95D59DC3179BCC32651 /* PBXBuildFile */ = {
+			isa = PBXBuildFile;
+			fileRef = 2C7FF4A6AFB1FC0222264CDC /* Assets.xcassets */;
+		};
+		4F86ECE1AF8AB0B1D07D4F25 /* PBXBuildFile */ = {
+			isa = PBXBuildFile;
+			fileRef = 9004E49A54771DFCB0CE9405 /* FanPulse/WidgetBridge.swift */;
+		};
+		35B6C319E1960B20A72E009C /* PBXBuildFile */ = {
+			isa = PBXBuildFile;
+			fileRef = E8775EAA98C5ECD3EFA7F267 /* FanPulseWidget.appex */;
+			settings = {
+				ATTRIBUTES = (
+					RemoveHeadersOnCopy,
+				);
+			};
+		};
+		F93DBC70CABB9BC68F614B3F /* FanPulse */ = {
+			path = FanPulse;
+			isa = PBXGroup;
+			children = (
+				D230E3A4AC72A23CB6DE99C1 /* App.swift */,
+				2C7FF4A6AFB1FC0222264CDC /* Assets.xcassets */,
+				6FE3BBAF94A1623D9F03A852 /* Domain.swift */,
+				3504C4467F1248DA3D6E8E88 /* Info.plist */,
+				E07A84907E441BC6780C1E75 /* PrivacyInfo.xcprivacy */,
+				631CCECDEFC73BD5D83BB877 /* ServerRound.swift */,
+				B149D4AF318888C880045500 /* Store.swift */,
+			);
+			sourceTree = "<group>";
+		};
+		D230E3A4AC72A23CB6DE99C1 /* App.swift */ = {
+			path = App.swift;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			sourceTree = "<group>";
+		};
+		0860991A47DB1D4930E7617E /* PBXBuildFile */ = {
+			isa = PBXBuildFile;
+			fileRef = D230E3A4AC72A23CB6DE99C1 /* App.swift */;
+		};
+		CBB66278E174D133B3ECA7C3 /* PBXProject */ = {
+			buildConfigurationList = EEBC89AE48A27CCB9F66AC98 /* XCConfigurationList */;
+			targets = (
+				A09BA9EE28CCC9FCEB6157D4 /* FanPulse */,
+				6C5430465F5EB4134BD59C65 /* FanPulseUITests */,
+				51AE8258D04AD44381377CEF /* FanPulseWidget */,
+				8BE358B138D459C8171B1083 /* FanPulseWidgetTests */,
+			);
+			minimizedProjectReferenceProxies = 1;
+			developmentRegion = en;
+			knownRegions = (
+				Base,
+				en,
+			);
+			isa = PBXProject;
+			productRefGroup = FC092192D1023783D8633430 /* Products */;
+			projectDirPath = "";
+			attributes = {
+				LastUpgradeCheck = 1430;
+				BuildIndependentTargetsInParallel = YES;
+				TargetAttributes = {
+					A09BA9EE28CCC9FCEB6157D4 /* FanPulse */ = {
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					6C5430465F5EB4134BD59C65 /* FanPulseUITests */ = {
+						TestTargetID = A09BA9EE28CCC9FCEB6157D4 /* FanPulse */;
+					};
+					51AE8258D04AD44381377CEF /* FanPulseWidget */ = {
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			hasScannedForEncodings = 0;
+			projectRoot = "";
+			preferredProjectObjectVersion = 77;
+			mainGroup = 8F7F5433147727F625DE2E1D /* PBXGroup */;
+		};
+		3C4CF1CFAEA3C0EEA6B8EF47 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CBB66278E174D133B3ECA7C3 /* PBXProject */;
+			remoteGlobalIDString = A09BA9EE28CCC9FCEB6157D4 /* FanPulse */;
+			remoteInfo = FanPulse;
+			proxyType = 1;
+		};
+		FC092192D1023783D8633430 /* Products */ = {
+			isa = PBXGroup;
+			name = Products;
+			children = (
+				479ABFC5944B14EAD9DF18D3 /* FanPulse.app */,
+				7F32371867C0BA8807E51669 /* FanPulseUITests.xctest */,
+				E8775EAA98C5ECD3EFA7F267 /* FanPulseWidget.appex */,
+				246DA967CBBA505BA75A9EB9 /* FanPulseWidgetTests.xctest */,
+			);
+			sourceTree = "<group>";
+		};
+		8ECC91A4DB47C239515D1F42 /* PBXBuildFile */ = {
+			isa = PBXBuildFile;
+			fileRef = B149D4AF318888C880045500 /* Store.swift */;
+		};
+		6FE3BBAF94A1623D9F03A852 /* Domain.swift */ = {
+			path = Domain.swift;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			sourceTree = "<group>";
+		};
+		9F21E81B84693D6018FA832D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CBB66278E174D133B3ECA7C3 /* PBXProject */;
+			remoteGlobalIDString = A09BA9EE28CCC9FCEB6157D4 /* FanPulse */;
+			remoteInfo = FanPulse;
+			proxyType = 1;
+		};
+		3504C4467F1248DA3D6E8E88 /* Info.plist */ = {
+			path = Info.plist;
+			isa = PBXFileReference;
+			lastKnownFileType = text.plist;
+			sourceTree = "<group>";
+		};
+		00058B4E7A402598BA7262B2 /* PBXBuildFile */ = {
+			isa = PBXBuildFile;
+			fileRef = 1BE70BB4DF939AD3BB44D83F /* WidgetShared/WidgetSnapshot.swift */;
+		};
+		EEBC89AE48A27CCB9F66AC98 /* XCConfigurationList */ = {
+			isa = XCConfigurationList;
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+			buildConfigurations = (
+				65D3F018D7B8177ECF6BF0A8 /* Debug */,
+				D1499D7FDB786038A8FE6AE2 /* Release */,
+			);
+		};
+		C178AE542E599700E04225E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A09BA9EE28CCC9FCEB6157D4 /* FanPulse */;
+			targetProxy = 3C4CF1CFAEA3C0EEA6B8EF47 /* PBXContainerItemProxy */;
+		};
+		15F7D91701FDB6DF3D14E24B /* XCConfigurationList */ = {
+			isa = XCConfigurationList;
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+			buildConfigurations = (
+				A4DB7D5C45ABF902F1BBFCF1 /* Debug */,
+				CD001D4EAB38C0C76E005508 /* Release */,
+			);
+		};
+		BBA70C00A86F5BC665EC0CBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				INFOPLIST_FILE = Support/AppInfo.plist;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Fan Pulse";
+				INFOPLIST_KEY_CFBundleDevelopmentRegion = en_GB;
+				CODE_SIGN_ENTITLEMENTS = Support/App.entitlements;
+				SDKROOT = iphoneos;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = app.fanpulse.local;
+				CURRENT_PROJECT_VERSION = 1;
+				CODE_SIGN_STYLE = Automatic;
+			};
+			name = Release;
+		};
+		E8775EAA98C5ECD3EFA7F267 /* FanPulseWidget.appex */ = {
+			path = FanPulseWidget.appex;
+			isa = PBXFileReference;
+			explicitFileType = "wrapper.app-extension";
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A4DB7D5C45ABF902F1BBFCF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			name = Debug;
+			buildSettings = {
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_STYLE = Automatic;
+				MARKETING_VERSION = 1.0;
+				INFOPLIST_FILE = WidgetExtension/Info.plist;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				GENERATE_INFOPLIST_FILE = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				CODE_SIGN_ENTITLEMENTS = Support/Widget.entitlements;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				CURRENT_PROJECT_VERSION = 1;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.fanpulse.local.widget;
+			};
+		};
+		1A463C197D9C211831CD5D47 /* Embed App Extensions */ = {
+			buildActionMask = 2147483647;
+			dstSubfolderSpec = 13;
+			isa = PBXCopyFilesBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+			dstPath = "";
+			files = (
+				35B6C319E1960B20A72E009C /* PBXBuildFile */,
+			);
+			name = "Embed App Extensions";
+		};
+	};
+	rootObject = CBB66278E174D133B3ECA7C3 /* PBXProject */;
+}

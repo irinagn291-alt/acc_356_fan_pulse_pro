@@ -1,0 +1,7 @@
+Pratique palpites de futebol em uma temporada individual de treino com cinco partidas fictícias. Escolha vitória do mandante, empate ou vitória do visitante e, se quiser, adicione um placar exato. Salve ou altere seus palpites antes do início da partida.
+
+Conclua uma rodada de treino para ver resultados simulados. Acerte o resultado para ganhar três pontos e o placar exato para ganhar mais dois. Acompanhe pontos, precisão, conquistas e temporadas anteriores no perfil.
+
+Crie ou entre em uma liga de amigos usando um servidor configurado para registrar palpites e comparar a classificação. As partidas e os pontos da liga são separados da temporada local.
+
+Lembretes opcionais e um widget na tela de início ajudam a acompanhar a rodada local. A interface do app está em inglês, e a temporada local não usa dados esportivos ao vivo.
