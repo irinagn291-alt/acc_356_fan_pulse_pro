@@ -1,4 +1,4 @@
-<!-- gf-brief source=f7c423b71ec90310efa0b504cd1ba62837f4c0c1b5ec8c99cf8da2e50af8c563 written=2026-11-14T01:47:06+03:00 -->
+<!-- gf-brief source=f76a8161e0c4cd43e28127e2af1701eb86aeff3d9b3bd709b7b8abb699605049 written=2026-11-14T01:47:38+03:00 -->
 # Fan Pulse
 
 ## What it is
