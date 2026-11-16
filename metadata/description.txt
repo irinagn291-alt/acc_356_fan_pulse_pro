@@ -1,7 +1,7 @@
-Practise football predictions in a single-player training season with five fictional fixtures. Choose a home win, draw or away win, and optionally add an exact score. Save or change your answers before kick-off.
+Practice soccer predictions in a single-player training season with five fictional fixtures. Choose a home win, draw, or away win, and optionally add an exact score. Save or change your answers before kickoff.
 
-Complete a training round to reveal simulated results. Earn three points for a correct outcome and two more for an exact score. Follow your points, accuracy, achievements and previous seasons in your profile.
+Complete a training round to reveal simulated results. Earn three points for a correct outcome and two more for an exact score. Follow your points, accuracy, achievements, and previous seasons in your profile.
 
 Create or join a friends’ league with a configured server to make predictions and compare standings. League fixtures and points are separate from your local season.
 
-Optional match reminders and a home-screen widget help you keep track of your local round. The app interface is in English; the local season does not use a live sports feed.
+Optional match reminders and a Home Screen widget help you follow your local round. The app interface is in English; the local season does not use a live sports feed.
