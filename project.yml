@@ -1,5 +1,6 @@
 name: FanPulse
 options:
+  createIntermediateGroups: true
   bundleIdPrefix: app.fanpulse
   deploymentTarget:
     iOS: '17.0'
