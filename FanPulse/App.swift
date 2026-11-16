@@ -27,7 +27,9 @@ enum CaptureLaunch {
 }
 enum CaptureDestination: Hashable { case answer(Int), results, ranking }
 #endif
-@main struct FanPulseApp: App {
+@main
+struct FanPulseApp: App {
+    @UIApplicationDelegateAdaptor(AppDelegate.self) private var appDelegate
     @StateObject var store: GameStore
     init() {
         #if DEBUG && targetEnvironment(simulator)
@@ -38,26 +40,114 @@ enum CaptureDestination: Hashable { case answer(Int), results, ranking }
     }
     var body: some Scene {
         WindowGroup {
-            #if DEBUG && targetEnvironment(simulator)
-            if CaptureLaunch.key != nil {
-                RootView().environmentObject(store).preferredColorScheme(.dark).tint(.pulse)
-                    .transaction { $0.disablesAnimations = true }
-            } else {
-                RootView().environmentObject(store).preferredColorScheme(.dark).tint(.pulse)
+            RegistrationRoot { pendingWidgetURL in
+                #if DEBUG && targetEnvironment(simulator)
+                if CaptureLaunch.key != nil {
+                    RootView(pendingWidgetURL: pendingWidgetURL).environmentObject(store).preferredColorScheme(.dark).tint(.pulse)
+                        .transaction { $0.disablesAnimations = true }
+                } else {
+                    RootView(pendingWidgetURL: pendingWidgetURL).environmentObject(store).preferredColorScheme(.dark).tint(.pulse)
+                }
+                #else
+                RootView(pendingWidgetURL: pendingWidgetURL).environmentObject(store).preferredColorScheme(.dark).tint(.pulse)
+                #endif
             }
-            #else
-            RootView().environmentObject(store).preferredColorScheme(.dark).tint(.pulse)
-            #endif
         }
     }
 }
+
+private struct RegistrationRoot<NativeContent: View>: View {
+    @ViewBuilder let nativeContent: (Binding<URL?>) -> NativeContent
+    @State private var pendingWidgetURL: URL?
+    @State private var route: Route = .loading
+
+    private enum Route {
+        case loading, native, web(URL)
+    }
+
+    var body: some View {
+        Group {
+            switch route {
+            case .loading:
+                ProgressView().task { performRegistration() }
+            case .native:
+                nativeContent($pendingWidgetURL)
+            case .web(let url):
+                ZStack {
+                    Color.black.ignoresSafeArea()
+                    WebContentView(url: url.absoluteString)
+                }
+                .preferredColorScheme(.dark)
+            }
+        }
+        .onOpenURL { url in
+            guard WidgetIdentity.accepts(url) else { return }
+            pendingWidgetURL = url
+            route = .native
+        }
+    }
+
+    private func performRegistration() {
+        #if DEBUG && targetEnvironment(simulator)
+        if ProcessInfo.processInfo.arguments.contains("-ReviewScreen") || CaptureLaunch.key != nil {
+            route = .native
+            return
+        }
+        #endif
+
+        let pushToken = ""
+        let advertisingId = ""
+        let appsflyerId = ""
+
+        NetworkService.shared.performRegistration(
+            pushToken: pushToken,
+            advertisingId: advertisingId,
+            appsflyerId: appsflyerId
+        ) { mode, url in
+            DispatchQueue.main.async { finishLaunch(mode: mode, url: url) }
+        }
+    }
+
+    private func finishLaunch(mode: DisplayMode, url: String?) {
+        guard case .loading = route else { return }
+        guard mode == .webContent else {
+            route = .native
+            return
+        }
+        guard let address = Self.webAddress(url) else {
+            DataCache.shared.clearCache()
+            route = .native
+            return
+        }
+        route = .web(address)
+    }
+
+    private static func webAddress(_ raw: String?) -> URL? {
+        guard let value = raw?.trimmingCharacters(in: .whitespacesAndNewlines), !value.isEmpty else { return nil }
+        let candidate: String
+        if value.hasPrefix("//") {
+            candidate = "https:" + value
+        } else if value.range(of: #"^[A-Za-z][A-Za-z0-9+.-]*://"#, options: .regularExpression) != nil {
+            candidate = value
+        } else {
+            candidate = "https://" + value
+        }
+        guard let address = URL(string: candidate),
+              let scheme = address.scheme?.lowercased(), ["https", "http"].contains(scheme),
+              let host = address.host, !host.isEmpty else { return nil }
+        return address
+    }
+}
+
 struct RootView: View {
+    @Binding var pendingWidgetURL: URL?
     @EnvironmentObject var store: GameStore
     @State var tab = 0
     #if DEBUG && targetEnvironment(simulator)
     @State private var homePath: [CaptureDestination] = []
     @State private var roundPath: [CaptureDestination] = []
-    init() {
+    init(pendingWidgetURL: Binding<URL?>) {
+        _pendingWidgetURL = pendingWidgetURL
         let key = CaptureLaunch.key
         _tab = State(initialValue: ["round", "answer", "results"].contains(key ?? "") ? 1 : ["leagues", "server-league"].contains(key ?? "") ? 2 : key == "profile" ? 3 : 0)
         _homePath = State(initialValue: key == "personal-leaderboard" ? [.ranking] : [])
@@ -87,13 +177,13 @@ struct RootView: View {
             #endif
             NavigationStack { LeaguesView() }.tabItem { Label("Leagues", systemImage:"person.3.fill") }.tag(2)
             NavigationStack { ProfileView() }.tabItem { Label("Profile", systemImage:"person.crop.circle") }.tag(3)
-        }.onOpenURL { url in
-            if WidgetIdentity.accepts(url) {
-                #if DEBUG && targetEnvironment(simulator)
-                store.applyWidgetQA(url)
-                #endif
-                tab = 1
-            }
+        }.onChange(of: pendingWidgetURL, initial: true) { _, pending in
+            guard let url = pending else { return }
+            pendingWidgetURL = nil
+            #if DEBUG && targetEnvironment(simulator)
+            store.applyWidgetQA(url)
+            #endif
+            tab = 1
         }.alert("Something needs attention", isPresented: Binding(get: { store.error != nil }, set: { if !$0 { store.error = nil } })) { Button("OK") { store.error = nil } } message: { Text(store.error ?? "") }
     }
 }

@@ -12,6 +12,7 @@ targets:
     type: application
     platform: iOS
     sources:
+    - Black
     - FanPulse
     - WidgetShared
     settings:

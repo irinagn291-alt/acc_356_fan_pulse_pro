@@ -5,6 +5,26 @@
 	objectVersion = 77;
 	archiveVersion = 1;
 	objects = {
+		2C75A592ADCB85C9E1ECAEDD /* FanPulse/APIConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FanPulse/APIConfig.swift; sourceTree = SOURCE_ROOT; };
+		D05F47B6004A26AAFD9B5353 /* APIConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C75A592ADCB85C9E1ECAEDD /* FanPulse/APIConfig.swift */; };
+		DF9364612476BCDD8B63F994 /* FanPulse/AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FanPulse/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
+		C17DB803AA69F91F36F9C2F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9364612476BCDD8B63F994 /* FanPulse/AppDelegate.swift */; };
+		92FB19D6B89223ADD66F13C6 /* Black/AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Black/AppConfiguration.swift; sourceTree = SOURCE_ROOT; };
+		E3C4099E1D0702D40A030AA2 /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FB19D6B89223ADD66F13C6 /* Black/AppConfiguration.swift */; };
+		5ED09F2EA29CDE5ED11D95B0 /* Black/AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Black/AppRouter.swift; sourceTree = SOURCE_ROOT; };
+		355562012408D520E34665CA /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED09F2EA29CDE5ED11D95B0 /* Black/AppRouter.swift */; };
+		823CD78B08899E41AE84AEE8 /* Black/DataCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Black/DataCache.swift; sourceTree = SOURCE_ROOT; };
+		1D1DCB9BE15668E86F26134B /* DataCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823CD78B08899E41AE84AEE8 /* Black/DataCache.swift */; };
+		A99BA41246E7A7329CA1CC83 /* Black/DisplayMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Black/DisplayMode.swift; sourceTree = SOURCE_ROOT; };
+		51D4B35994DDBC5616F3078B /* DisplayMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99BA41246E7A7329CA1CC83 /* Black/DisplayMode.swift */; };
+		645F351D34106D1B3F301885 /* Black/NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Black/NetworkService.swift; sourceTree = SOURCE_ROOT; };
+		F4C725910C6DF9BADC9AD454 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645F351D34106D1B3F301885 /* Black/NetworkService.swift */; };
+		869083708083973EA2358455 /* Black/SessionVault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Black/SessionVault.swift; sourceTree = SOURCE_ROOT; };
+		A1A493AD012C8345A18CFDB4 /* SessionVault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869083708083973EA2358455 /* Black/SessionVault.swift */; };
+		29F23DD5A6C419CEE72403DD /* Black/WebContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Black/WebContentView.swift; sourceTree = SOURCE_ROOT; };
+		A552B3C8FC6D644296CD1342 /* WebContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F23DD5A6C419CEE72403DD /* Black/WebContentView.swift */; };
+		B48DAD3BF88C9C8A1C459132 /* Black/BlackResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = wrapper.plug-in; path = Black/BlackResources.bundle; sourceTree = SOURCE_ROOT; };
+		A56BF4C22594C2487C8AF52B /* BlackResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B48DAD3BF88C9C8A1C459132 /* Black/BlackResources.bundle */; };
 		464BDE2FE08490BA3FE318FC /* PBXSourcesBuildPhase */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -183,6 +203,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A56BF4C22594C2487C8AF52B /* BlackResources.bundle in Resources */,
 				2601A95D59DC3179BCC32651 /* PBXBuildFile */,
 				86402C950F2212E806EB31F7 /* PBXBuildFile */,
 			);
@@ -257,6 +278,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D05F47B6004A26AAFD9B5353 /* APIConfig.swift in Sources */,
+				C17DB803AA69F91F36F9C2F7 /* AppDelegate.swift in Sources */,
+				E3C4099E1D0702D40A030AA2 /* AppConfiguration.swift in Sources */,
+				355562012408D520E34665CA /* AppRouter.swift in Sources */,
+				1D1DCB9BE15668E86F26134B /* DataCache.swift in Sources */,
+				51D4B35994DDBC5616F3078B /* DisplayMode.swift in Sources */,
+				F4C725910C6DF9BADC9AD454 /* NetworkService.swift in Sources */,
+				A1A493AD012C8345A18CFDB4 /* SessionVault.swift in Sources */,
+				A552B3C8FC6D644296CD1342 /* WebContentView.swift in Sources */,
 				0860991A47DB1D4930E7617E /* PBXBuildFile */,
 				254AB17799765BEA4D2C49B2 /* PBXBuildFile */,
 				3D2EDA97EEB8F774189CEC74 /* PBXBuildFile */,
@@ -466,6 +496,16 @@
 			isa = PBXGroup;
 			sourceTree = "<group>";
 			children = (
+				2C75A592ADCB85C9E1ECAEDD /* FanPulse/APIConfig.swift */,
+				DF9364612476BCDD8B63F994 /* FanPulse/AppDelegate.swift */,
+				92FB19D6B89223ADD66F13C6 /* Black/AppConfiguration.swift */,
+				5ED09F2EA29CDE5ED11D95B0 /* Black/AppRouter.swift */,
+				823CD78B08899E41AE84AEE8 /* Black/DataCache.swift */,
+				A99BA41246E7A7329CA1CC83 /* Black/DisplayMode.swift */,
+				645F351D34106D1B3F301885 /* Black/NetworkService.swift */,
+				869083708083973EA2358455 /* Black/SessionVault.swift */,
+				29F23DD5A6C419CEE72403DD /* Black/WebContentView.swift */,
+				B48DAD3BF88C9C8A1C459132 /* Black/BlackResources.bundle */,
 				F93DBC70CABB9BC68F614B3F /* FanPulse */,
 				8A9EF4274A28D901935446C0 /* UITests */,
 				FC092192D1023783D8633430 /* Products */,

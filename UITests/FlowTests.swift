@@ -1,7 +1,9 @@
 import XCTest
 final class FlowTests:XCTestCase {
     @MainActor func testLocalFlow() throws {
-        let app=XCUIApplication(); app.launch()
+        let app=XCUIApplication()
+        app.launchArguments = ["-ReviewScreen"]
+        app.launch()
         XCTAssertTrue(app.staticTexts["FAN / PULSE"].waitForExistence(timeout:15))
         attach("home",app)
         app.buttons["Make your picks"].tap()
@@ -18,7 +20,9 @@ final class FlowTests:XCTestCase {
         app.tabBars.buttons["Profile"].tap(); attach("profile",app)
     }
     @MainActor func testServerLeague() throws {
-        let app=XCUIApplication(); app.launch(); app.tabBars.buttons["Leagues"].tap()
+        let app=XCUIApplication()
+        app.launchArguments = ["-ReviewScreen"]
+        app.launch(); app.tabBars.buttons["Leagues"].tap()
         let url=app.textFields["Server URL"]; XCTAssertTrue(url.waitForExistence(timeout:5)); url.tap()
         url.press(forDuration:1.2)
         if app.menuItems["Select All"].exists { app.menuItems["Select All"].tap() }
